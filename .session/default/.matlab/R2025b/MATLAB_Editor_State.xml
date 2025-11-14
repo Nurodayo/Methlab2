@@ -3,13 +3,16 @@
    <File absPath="/MATLAB Drive" lastWrittenTime="1763145397674" name="newton_raphson_g.m">
       <CodeFolds version="1.0"/>
    </File>
-   <File absPath="/MATLAB Drive" lastWrittenTime="1763151428608" name="biseccion_g2.m">
-      <CodeFolds version="1.0"/>
-   </File>
    <File absPath="/MATLAB Drive" lastWrittenTime="1763151438636" name="newton_raphson_g2.m">
       <CodeFolds version="1.0"/>
    </File>
-   <File absPath="/MATLAB Drive" lastWrittenTime="1763151446829" name="Ejercicio_1_g2.m">
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763152518792" name="biseccion_g2.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763152605494" name="secante_g2.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763152799425" name="Ejercicio_1_g2.m">
       <CodeFolds version="1.0"/>
    </File>
 </Editor>

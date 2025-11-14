@@ -1,7 +1,7 @@
 function sol = biseccion_g2(a, b, f, tol, max)
 %% de la forma que esta programado no importa si los extremos estan desordenados, el programa los reordena
     m = 1e-12;
-    i = 0
+    i = 0;
     if nargin < 4 || isempty(tol)
         tol = m;  % si tol es null hacemos que la tolerancia sea el valor mas chiquito distinto de 0 q permite matlab
     end
@@ -48,6 +48,8 @@ function sol = biseccion_g2(a, b, f, tol, max)
             end
             h = (a+b)/2;
             x1 = h;
+
+            i = i+1;
             if i == max
                 break; %% paramos si llegamos al numero maximo de iteraciones
             end
