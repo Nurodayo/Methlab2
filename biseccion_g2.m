@@ -11,6 +11,9 @@ function sol = biseccion_g2(a, b, f, tol, max)
     if(a>b)
         [a, b] = deal(b, a);
     end
+    fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
+    fprintf('a = %.6g, b = %.6g\n', a, b);
+
     if ((f(a)>0 && f(b)>0) || (f(a)<0 && f(b)<0)) %% Asegurarnos de que los extremos sean validos
         error("Extremos no validos");
     else
@@ -21,23 +24,23 @@ function sol = biseccion_g2(a, b, f, tol, max)
             fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
 
         %% hacemos las comparacion de los simbolos + y - y redefinimos extremos
-        if f(x0) < 0
+        if f(a)*f(x0) < 0
             b = x0;    
         else
             a = x0;
         end
-        %%fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
+        fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
 
         %#2
         h = (a+b)/2;
         
         x1 = h;
-        if f(x1) < 0
+        if f(a)*f(x1) < 0
             b = x1;    
         else
             a = x1;
         end
-        %%fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
+        fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
 
         while abs(x1-x0)>tol
             %% redifinimos la respuesta anterior para el calculo del error
@@ -45,7 +48,7 @@ function sol = biseccion_g2(a, b, f, tol, max)
             %%fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
             h = (a+b)/2;
             x1 = h;  % Actualizacion al punto medio
-            if f(x1) < 0
+            if f(a)*f(x1) < 0
                 b = h;    
             else
                 a = h;
