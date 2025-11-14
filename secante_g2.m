@@ -1,5 +1,5 @@
 function sol = secante_g2(x0, x1, f, tol, max)
-    m = 1e-12;
+    m = 1e-10;
     i = 0;
     if nargin < 4 || isempty(tol)
         tol = m;  % si tol es null hacemos que la tolerancia sea el valor mas chiquito distinto de 0 q permite matlab

@@ -1,6 +1,6 @@
 function sol = newton_raphson_g2(x0, f, tol, max)
     
-    h = 1e-12;
+    h = 1e-10;
 
     if nargin < 3 || isempty(tol)
         tol = h;  % si tol es null hacemos que la tolerancia sea el valor mas chiquito distinto de 0 q permite matlab
@@ -36,7 +36,7 @@ function sol = newton_raphson_g2(x0, f, tol, max)
 
     end
 
-    sol = x1
+    sol = x1;
 end
 
     

@@ -2,7 +2,6 @@ syms x;
 %% El programa asume que las funciones son == a 0 a la hora de ejecutar la funcion
 %% funcion == 0
 f_sym = -2535.2113*x^2+9000*(4*x^2-3.55^2)^(1/2)+1015.45; %%esto es una funcion simbolica
-%% usamos sind y cosd debido a que el ejercicio esta en grados
 %%y hay que transformarla antes de pasarsela a la funcion
 f = matlabFunction(f_sym); % conversion a funcion de matlab
 %% solucion inicial

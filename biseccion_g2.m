@@ -1,6 +1,6 @@
 function sol = biseccion_g2(a, b, f, tol, max)
 %% de la forma que esta programado no importa si los extremos estan desordenados, el programa los reordena
-    m = 1e-12;
+    m = 1e-10;
     i = 0;
     if nargin < 4 || isempty(tol)
         tol = m;  % si tol es null hacemos que la tolerancia sea el valor mas chiquito distinto de 0 q permite matlab
@@ -11,8 +11,8 @@ function sol = biseccion_g2(a, b, f, tol, max)
     if(a>b)
         [a, b] = deal(b, a);
     end
-    fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
-    fprintf('a = %.6g, b = %.6g\n', a, b);
+    %fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
+    %fprintf('a = %.6g, b = %.6g\n', a, b);
 
     if ((f(a)>0 && f(b)>0) || (f(a)<0 && f(b)<0)) %% Asegurarnos de que los extremos sean validos
         error("Extremos no validos");
@@ -21,7 +21,7 @@ function sol = biseccion_g2(a, b, f, tol, max)
         %#1
         h = (a+b)/2;
         x0 = h;
-            fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
+        %% fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
 
         %% hacemos las comparacion de los simbolos + y - y redefinimos extremos
         if f(a)*f(x0) < 0
@@ -29,7 +29,7 @@ function sol = biseccion_g2(a, b, f, tol, max)
         else
             a = x0;
         end
-        fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
+        %fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
 
         %#2
         h = (a+b)/2;
@@ -40,7 +40,7 @@ function sol = biseccion_g2(a, b, f, tol, max)
         else
             a = x1;
         end
-        fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
+        %fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
 
         while abs(x1-x0)>tol
             %% redifinimos la respuesta anterior para el calculo del error

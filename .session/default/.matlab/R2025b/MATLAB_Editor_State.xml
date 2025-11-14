@@ -3,22 +3,25 @@
    <File absPath="/MATLAB Drive" lastWrittenTime="1763145397674" name="newton_raphson_g.m">
       <CodeFolds version="1.0"/>
    </File>
-   <File absPath="/MATLAB Drive" lastWrittenTime="1763151438636" name="newton_raphson_g2.m">
-      <CodeFolds version="1.0"/>
-   </File>
-   <File absPath="/MATLAB Drive" lastWrittenTime="1763152605494" name="secante_g2.m">
-      <CodeFolds version="1.0"/>
-   </File>
-   <File absPath="/MATLAB Drive" lastWrittenTime="1763155735973" name="Ejercicio_2_g2.m">
-      <CodeFolds version="1.0"/>
-   </File>
-   <File absPath="/MATLAB Drive" lastWrittenTime="1763156699419" name="Ejercicio_3_g2.m">
-      <CodeFolds version="1.0"/>
-   </File>
    <File absPath="/MATLAB Drive" lastWrittenTime="1763157070504" name="Ejercicio_1_g2.m">
       <CodeFolds version="1.0"/>
    </File>
-   <File absPath="/MATLAB Drive" lastWrittenTime="1763157241172" name="biseccion_g2.m">
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763157526424" name="secante_g2.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763158240220" name="Ejercicio_2_g2.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763158325556" name="newton_raphson_g2.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763158364509" name="Ejercicio_3_g2.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763158486643" name="main.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763158521746" name="biseccion_g2.m">
       <CodeFolds version="1.0"/>
    </File>
 </Editor>
