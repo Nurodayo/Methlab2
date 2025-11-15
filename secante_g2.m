@@ -9,14 +9,14 @@ function sol = secante_g2(x0, x1, f, tol, max)
     end
     %% primera iteracion
     x2 = x1-((x1-x0)/(f(x1)-f(x0)))*f(x1);
-    fprintf('%.6g BS iteracion %.6g\n',x2, i);
+    fprintf('%.6g SC iteracion %.6g\n',x2, i);
     i = i+1;
     while abs(x2-x1) > tol
         %% reemplazamos valores para la sgt iteracion
         x0 = x1;
         x1 = x2;
         x2 = x1-((x1-x0)/(f(x1)-f(x0)))*f(x1);
-        fprintf('%.6g BS iteracion %.6g\n',x2, i);
+        fprintf('%.6g SC iteracion %.6g\n',x2, i);
 
         i = i + 1;
         if i == max

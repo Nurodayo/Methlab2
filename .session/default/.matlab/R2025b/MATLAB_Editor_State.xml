@@ -3,9 +3,6 @@
    <File absPath="/MATLAB Drive" lastWrittenTime="1763145397674" name="newton_raphson_g.m">
       <CodeFolds version="1.0"/>
    </File>
-   <File absPath="/MATLAB Drive" lastWrittenTime="1763239723573" name="secante_g2.m">
-      <CodeFolds version="1.0"/>
-   </File>
    <File absPath="/MATLAB Drive" lastWrittenTime="1763239732603" name="newton_extendido_g2.m">
       <CodeFolds version="1.0"/>
    </File>
@@ -25,6 +22,9 @@
       <CodeFolds version="1.0"/>
    </File>
    <File absPath="/MATLAB Drive" lastWrittenTime="1763239972703" name="main.m">
+      <CodeFolds version="1.0"/>
+   </File>
+   <File absPath="/MATLAB Drive" lastWrittenTime="1763240198490" name="secante_g2.m">
       <CodeFolds version="1.0"/>
    </File>
 </Editor>
