@@ -22,7 +22,8 @@ function sol = biseccion_g2(a, b, f, tol, max)
         h = (a+b)/2;
         x0 = h;
         %% fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
-
+        fprintf('%.6g BS iteracion %.6g\n',x0, i);
+        i = i+1;
         %% hacemos las comparacion de los simbolos + y - y redefinimos extremos
         if f(a)*f(x0) < 0
             b = x0;    
@@ -41,7 +42,8 @@ function sol = biseccion_g2(a, b, f, tol, max)
             a = x1;
         end
         %fprintf('f(a) = %.6g, f(b) = %.6g\n', f(a), f(b));
-
+        fprintf('%.6g BS iteracion %.6g\n',x1, i);
+        i = i+1;
         while abs(x1-x0)>tol
             %% redifinimos la respuesta anterior para el calculo del error
             x0 = x1;
@@ -54,7 +56,8 @@ function sol = biseccion_g2(a, b, f, tol, max)
                 a = h;
             end
             %% obtenemos los simbolos de los extremos
-            
+            fprintf('%.6g BS iteracion %.6g\n',x1, i);
+
             i = i+1;
             if i>max
                 break; %% paramos si llegamos al numero maximo de iteraciones
@@ -62,6 +65,8 @@ function sol = biseccion_g2(a, b, f, tol, max)
 
         end
     end
+    fprintf('\n');
+
     sol = x1;
 end
 

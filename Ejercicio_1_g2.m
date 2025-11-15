@@ -1,3 +1,5 @@
+fprintf("Ejercicio 1 \n");
+
 syms x;
 %% El programa asume que las funciones son == a 0 a la hora de ejecutar la funcion
 %% funcion == 0
@@ -12,9 +14,11 @@ x0 = 45;
 sol_e1_n = newton_raphson_g2(x0, f, 0.0001, 256);
 sol_e1_b = biseccion_g2(90, 0, f, 0.0001, 256);
 sol_e1_s = secante_g2(40, 30, f, 0.0001, 256);
+sol_e1_ne = newton_extendido_g2(x0, f, 0.0001, 256);
 
 %% imprimimos las Soluciones
 fprintf("Respuestas Ejercicio 1 \n\n");
 disp(sol_e1_n);
 disp(sol_e1_b);
-disp(sol_e1_s)
+disp(sol_e1_s);
+disp(sol_e1_ne);
